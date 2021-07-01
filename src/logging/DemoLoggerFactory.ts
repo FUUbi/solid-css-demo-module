@@ -5,9 +5,9 @@ import { CustomLogger } from './CustomLogger';
  * Uses the winston library to create loggers for the given logging level.
  * By default, it will print to the console with colorized logging levels.
  *
- * This creates instances of {@link WinstonLogger}.
+ * This creates instances of {@link CustomLogger}.
  */
-export class WinstonLoggerFactory implements LoggerFactory {
+export class CustomFactory implements LoggerFactory {
   private readonly level: string;
   public constructor(level: string) {
     this.level = level;
