@@ -2,12 +2,11 @@ import type { Logger, LoggerFactory } from '@solid/community-server';
 import { CustomLogger } from './CustomLogger';
 
 /**
- * Uses the winston library to create loggers for the given logging level.
- * By default, it will print to the console with colorized logging levels.
+ * A custom logger to demonstrate how to extend the CSS with a custom module.
  *
  * This creates instances of {@link CustomLogger}.
  */
-export class CustomFactory implements LoggerFactory {
+export class CustomLoggerFactory implements LoggerFactory {
   private readonly level: string;
   public constructor(level: string) {
     this.level = level;

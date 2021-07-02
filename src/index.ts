@@ -1,3 +1,3 @@
 // Logging
-export * from './logging/DemoLoggerFactory';
+export * from './logging/CustomLoggerFactory';
 export * from './logging/CustomLogger';

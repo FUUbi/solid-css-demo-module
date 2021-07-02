@@ -1,5 +1,12 @@
 {
-  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^1.0.0/components/context.jsonld",
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^1.0.0/components/context.jsonld",
+   "https://linkedsoftwaredependencies.org/bundles/npm/css-demo-module/^0.0.0/components/context.jsonld",
+    {
+      "solid-server": "urn:solid-server:default:",
+      "css-demo-module": "urn:css-demo-module:default:"
+    }
+  ],
   "import": [
     "files-scs:config/app/app/default.json",
     "files-scs:config/app/init/default.json",
@@ -22,14 +29,15 @@
     "files-scs:config/util/auxiliary/acl.json",
     "files-scs:config/util/identifiers/suffix.json",
     "files-scs:config/util/index/default.json",
-    "files-scs:config/util/logging/winston.json",
     "files-scs:config/util/representation-conversion/default.json",
     "files-scs:config/util/resource-locker/memory.json",
     "files-scs:config/util/variables/default.json"
   ],
   "@graph": [
     {
-      "comment": "A single-pod server that stores its resources in memory."
+      "@id": "urn:solid-server:default:LoggerFactory",
+      "@type": "CustomLoggerFactory",
+      "CustomLoggerFactory:_level": "info"
     }
   ]
 }
