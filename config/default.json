@@ -1,9 +1,9 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/solid-hue/^1.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/css-demo-module/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^0.0.0/components/context.jsonld",
     {
-      "solid-hue": "urn:solid-hue:default:",
+      "css-demo-module": "urn:css-demo-module:default:",
       "solid-server": "urn:solid-server:default:"
     }
   ],
