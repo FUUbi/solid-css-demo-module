@@ -37,7 +37,8 @@
     "build:components": "componentsjs-generator -s src -c dist/components -i .componentsignore",
     "build:ts": "tsc",
     "lint": "eslint . --cache",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "start": "npm run build && npm run build && npx community-solid-server -c config/default.json  -m ."
   },
   "dependencies": {
     "@rdfjs/data-model": "^1.2.0",
