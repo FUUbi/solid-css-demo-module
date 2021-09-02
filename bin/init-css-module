@@ -11,7 +11,7 @@ git remote remove solid-starter-module
 # Get the name of the directory
 project_name="${PWD##*/}"
 
-sed -i '' -e 's/css-demo-module/'"${project_name}"'/g' "$(find . -type f)"
+find . -type f -print0 | xargs -0 sed -i  -e 's/css-demo-module/'"${project_name}"'/g'
 git commit -am "chore: Initialize repository."
 
 echo "Run"
