@@ -1,6 +1,6 @@
 {
   "name": "css-demo-module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A starter project to kickstart the development of a CSS module.",
   "keywords": [
     "solid",
@@ -51,17 +51,18 @@
     "@solid/community-server": "^0.8.1"
   },
   "devDependencies": {
-    "@solid/community-server": "^1.0.0-beta.0",
-    "@tsconfig/node14": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.11.1",
-    "@typescript-eslint/parser": "^4.11.1",
+    "@solid/community-server": "2.0.1",
+    "@tsconfig/node14": "1.0.1",
+    "@typescript-eslint/eslint-plugin": "5.12.0",
+    "@typescript-eslint/parser": "5.12.0",
     "componentsjs-generator": "^2.0.0",
-    "eslint": "^7.16.0",
+    "eslint": "8.9.0",
     "eslint-config-es": "^3.26.13",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-tsdoc": "^0.2.10",
-    "eslint-plugin-unused-imports": "^1.0.1",
-    "husky": "^4.3.6",
-    "typescript": "^4.1.3"
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-tsdoc": "0.2.14",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "4.3.8",
+    "typescript": "4.5.5"
   }
 }
+
