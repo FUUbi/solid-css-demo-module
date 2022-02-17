@@ -8,8 +8,14 @@ git fetch solid-starter-module main
 git checkout FETCH_HEAD -- .
 git remote remove solid-starter-module
 
-# Get the name of the directory
-project_name="${PWD##*/}"
+if [ -z ${project_name+x} ];
+then
+  echo "project_name is unset.";
+  # Get the name of the directory
+  project_name="${PWD##*/}"
+  echo "We set the project_name to the current directory name ${project_name}" ;
+fi
+
 
 find . -type f -print0 | xargs -0 sed -i  -e 's/css-demo-module/'"${project_name}"'/g'
 git commit -am "chore: Initialize repository."

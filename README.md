@@ -11,6 +11,12 @@ cd project-name
 wget -O - https://raw.githubusercontent.com/FUUbi/solid-css-demo-module/main/bin/init-css-module | bash
 ```
 
+Or set the project_name variable manually if your project name contains special characters which interfere with the file system or sed. 
+Make sure to escape special regex characters which could interfere with the sed command (as an example  / is replaced by \/).  
+```bash
+cd somedir
+project_name="@org\/css-cool-module" wget -O - https://raw.githubusercontent.com/FUUbi/solid-css-demo-module/main/bin/init-css-module | bash
+```
 
 *The scripts depends on: Bash, Git, Sed*
 
